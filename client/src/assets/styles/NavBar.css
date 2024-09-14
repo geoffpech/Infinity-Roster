@@ -1,0 +1,9 @@
+.NavBar {
+  background-color: var(--primary-color);
+}
+
+.NavBar > h1 {
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 10px var(--secondary-color);
+  paint-order: stroke fill;
+}

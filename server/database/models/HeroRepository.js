@@ -36,7 +36,7 @@ class HeroRepositroy extends abstractRepository {
 
   async update(hero) {
     const [result] = await this.database.query(
-      `update ${this.table} set name = ?, alias = ?, biography = ?, image_url = ? where id = 3`,
+      `update ${this.table} set name = ?, alias = ?, biography = ?, image_url = ? where id = ?`,
       [hero.name, hero.alias, hero.biography, hero.image_url, hero.id,]
     );
     return result.affectedRows;
@@ -45,10 +45,3 @@ class HeroRepositroy extends abstractRepository {
 
 module.exports = HeroRepositroy;
 
-// create table hero (
-//   id int unsigned primary key auto_increment not null,
-//   name VARCHAR(255) NOT NULL,
-//   alias VARCHAR(255),
-//   biography TEXT NOT NULL,
-//   image_url TEXT
-//   );
