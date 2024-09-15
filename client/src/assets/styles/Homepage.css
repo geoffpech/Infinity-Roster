@@ -1,16 +1,13 @@
 .HomePage_background {
   background: radial-gradient(var(--sixty-color), var(--seventy-color));
-  /* background-color: #333333; */
-  /* background-color: #8a3ffc; */
-  /* background-color: #3df57a; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-/* .HomePage_background > p {
+.HomePage_background > p {
   display: none;
-} */
+}
 
 .Homepage_list > ul {
   display: flex;
