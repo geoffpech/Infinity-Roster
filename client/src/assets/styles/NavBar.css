@@ -9,10 +9,11 @@
   width: 4rem;
 }
 
-.NavBar_mobile > h1 {
+.NavBar_mobile > a {
   font-family: var(--primary-font);
   -webkit-text-stroke: 10px var(--secondary-color);
   paint-order: stroke fill;
+  color: var(--fifty-color);
 }
 
 .NavBar_menu > img {
@@ -38,11 +39,12 @@
     font-family: var(--primary-font);
   }
 
-  .NavBar_Stan_title > h1 {
+  .NavBar_Stan_title > a {
     font-family: var(--primary-font);
     -webkit-text-stroke: 10px var(--secondary-color);
     paint-order: stroke fill;
     font-size: 3rem;
+    color: var(--fifty-color);
   }
 
   .NavBar_Stan_title {
@@ -57,7 +59,7 @@
     margin-right: 2rem;
   }
 
-  .NavBar_menu_list > ul > li {
+  .NavBar_menu_list > ul > a {
     font-size: 1.5rem;
     color: var(--primary-color);
     -webkit-text-stroke: 10px var(--fifty-color);
