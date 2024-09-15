@@ -1,9 +1,66 @@
-.NavBar {
+.NavBar_mobile {
   background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.NavBar > h1 {
+.NavBar_mobile > img {
+  width: 4rem;
+}
+
+.NavBar_mobile > h1 {
   font-family: var(--primary-font);
   -webkit-text-stroke: 10px var(--secondary-color);
   paint-order: stroke fill;
+}
+
+.NavBar_menu > img {
+  width: 2rem;
+  height: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.NavBar_desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .NavBar_mobile {
+    display: none;
+  }
+
+  .NavBar_desktop {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--primary-font);
+  }
+
+  .NavBar_Stan_title > h1 {
+    font-family: var(--primary-font);
+    -webkit-text-stroke: 10px var(--secondary-color);
+    paint-order: stroke fill;
+    font-size: 3rem;
+  }
+
+  .NavBar_Stan_title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .NavBar_menu_list > ul {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+
+  .NavBar_menu_list > ul > li {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    -webkit-text-stroke: 10px var(--fifty-color);
+    paint-order: stroke fill;
+  }
 }

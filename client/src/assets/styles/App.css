@@ -14,7 +14,12 @@
   --secondary-color: #55c1ff;
   --third-color: #ff3a20;
   --fourth-color: #2a2a2a;
+  --fifty-color: #000000;
 
   /*Font*/
   --primary-font: "Bangers", sans-serif;
+}
+
+button {
+  all: unset;
 }
