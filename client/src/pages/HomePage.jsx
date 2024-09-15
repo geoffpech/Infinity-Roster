@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+ 
 export default function HomePage() {
   return (
     <div className="Homepage_list">
       <ul>
         <li>
-          <button type="button">Création de compte</button>
+          <Link to="/okrgok,vred,">Création de compte</Link>
         </li>
         <li>Connexion</li>
         <li>Hero</li>
