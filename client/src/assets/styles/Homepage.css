@@ -1,4 +1,60 @@
+.HomePage_background {
+  background: radial-gradient(var(--sixty-color), var(--seventy-color));
+  /* background-color: #333333; */
+  /* background-color: #8a3ffc; */
+  /* background-color: #3df57a; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* .HomePage_background > p {
+  display: none;
+} */
+
 .Homepage_list > ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--primary-font);
+  padding-top: 2rem;
+}
+
+.Homepage_list > ul > li > a {
+  color: var(--primary-color);
+  -webkit-text-stroke: 4px var(--fifty-color);
+  paint-order: stroke fill;
+}
+
+.HomePage_button {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: 2px solid var(--fifty-color);
+}
+
+@media (min-width: 992px) {
+  .Homepage_list > ul {
+    display: none;
+  }
+
+  .HomePage_background {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .HomePage_background > p {
+    color: var(--primary-color);
+    -webkit-text-stroke: 4px var(--fifty-color);
+    paint-order: stroke fill;
+    font-family: var(--primary-font);
+    font-size: large;
+    max-width: 20ch;
+  }
+
+  .HomePage_background > img {
+    width: 40rem;
+  }
 }
