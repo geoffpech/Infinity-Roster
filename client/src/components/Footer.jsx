@@ -44,7 +44,7 @@ function FooterCar() {
         if (position < window.innerWidth) {
           requestAnimationFrame(moveCar); // Continuer l'animation
         } else {
-          position = -100; // Repositionner la voiture au départ
+          position = -400; // Repositionner la voiture au départ
           requestAnimationFrame(moveCar); // Relancer l'animation
         }
       }

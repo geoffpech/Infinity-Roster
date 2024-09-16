@@ -1,8 +1,19 @@
 .Footer_container {
-  background: radial-gradient(var(--secondary-color), var(--seventy-color));
+  background: radial-gradient(var(--primary-color), var(--seventy-color));
+}
+
+.Footer_first_car {
+  width: 16rem;
+  margin-bottom: 4rem;
 }
 
 .Footer_second_car {
-  width: 18rem;
+  width: 25rem;
   margin-top: 3rem;
+}
+
+@media (max-width: 992px) {
+  .Footer_second_car {
+    display: none;
+  }
 }

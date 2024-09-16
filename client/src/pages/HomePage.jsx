@@ -44,11 +44,13 @@ export default function HomePage() {
           </li>
         </ul>
       </div>
-      <p>
-        S'adresse aux passionnés de comics et de super-héros souhaitant avoir un
-        accès rapide et personnalisé aux caractéristiques de leurs personnages
-        favoris.
-      </p>
+      <div className="HomePage_description">
+        <p>
+          S'adresse aux passionnés de comics et de super-héros souhaitant avoir
+          un accès rapide et personnalisé aux caractéristiques de leurs
+          personnages favoris.
+        </p>
+      </div>
       <img src={Stanlee} alt="stan lee fan art haut du corps" />
     </div>
   );
