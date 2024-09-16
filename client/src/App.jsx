@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import "./assets/styles/App.css";
 import "./assets/styles/NavBar.css";
 import "./assets/styles/Homepage.css";
+import "./assets/styles/Footer.css";
 
 function App() {
   return (

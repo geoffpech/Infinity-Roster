@@ -1,0 +1,8 @@
+.Footer_container {
+  background: radial-gradient(var(--secondary-color), var(--seventy-color));
+}
+
+.Footer_second_car {
+  width: 18rem;
+  margin-top: 3rem;
+}
