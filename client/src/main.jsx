@@ -5,11 +5,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import HomePage from "./pages/HomePage";
-import AccountCreation from "./pages/AccountCreation";
-import LoginUser from "./pages/LoginUser";
 import CharacterHero from "./pages/CharacterHero";
 import CharacterVilain from "./pages/CharacterVilain";
-import FavoriteUser from "./pages/FavoriteUser";
+
+import { heroLoader } from "./services/request";
 
 const router = createBrowserRouter([
   {
@@ -20,24 +19,13 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/accountcreation",
-        element: <AccountCreation />,
-      },
-      {
-        path: "/login",
-        element: <LoginUser />,
-      },
-      {
         path: "/hero",
         element: <CharacterHero />,
+        loader: heroLoader,
       },
       {
         path: "/vilain",
         element: <CharacterVilain />,
-      },
-      {
-        path: "/favoris",
-        element: <FavoriteUser />,
       },
     ],
   },

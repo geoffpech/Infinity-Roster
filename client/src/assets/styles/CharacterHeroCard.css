@@ -1,0 +1,24 @@
+.Character_hero_card {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  height: 100%;
+  color: var(--primary-color);
+  -webkit-text-stroke: 6px var(--fifty-color);
+  paint-order: stroke fill;
+}
+
+.Character_hero_card > img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Character_hero_card > h2,
+h3,
+p {
+  padding: 0.5rem;
+  letter-spacing: 2px;
+  line-height: 1.25rem;
+}

@@ -6,6 +6,8 @@ import "./assets/styles/App.css";
 import "./assets/styles/NavBar.css";
 import "./assets/styles/Homepage.css";
 import "./assets/styles/Footer.css";
+import "./assets/styles/CharacterHero.css";
+import "./assets/styles/CharacterHeroCard.css";
 
 function App() {
   return (
