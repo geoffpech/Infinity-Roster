@@ -1,5 +1,6 @@
 .Footer_container {
   background: radial-gradient(var(--primary-color), var(--seventy-color));
+  overflow-x: hidden;
 }
 
 .Footer_first_car {

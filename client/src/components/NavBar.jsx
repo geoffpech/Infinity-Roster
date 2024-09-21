@@ -39,9 +39,6 @@ export default function NavBar() {
             <Link to="/login">
               <li>Connexion</li>
             </Link>
-            <Link to="/favoris">
-              <li>Favoris</li>
-            </Link>
           </ul>
         </div>
       </div>
