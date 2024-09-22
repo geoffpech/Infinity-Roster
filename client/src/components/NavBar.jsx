@@ -33,12 +33,6 @@ export default function NavBar() {
             <Link to="/vilain">
               <li>Vilain</li>
             </Link>
-            <Link to="/accountcreation">
-              <li>Création de compte</li>
-            </Link>
-            <Link to="/login">
-              <li>Connexion</li>
-            </Link>
           </ul>
         </div>
       </div>

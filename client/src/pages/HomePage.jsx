@@ -8,20 +8,6 @@ export default function HomePage() {
       <div className="Homepage_list">
         <ul>
           <li>
-            <Link to="/accountcreation">
-              <button className="HomePage_button" type="button">
-                Création de compte
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/login">
-              <button className="HomePage_button" type="button">
-                Connexion
-              </button>
-            </Link>
-          </li>
-          <li>
             <Link to="/hero">
               <button className="HomePage_button" type="button">
                 Hero
@@ -32,13 +18,6 @@ export default function HomePage() {
             <Link to="/vilain">
               <button className="HomePage_button" type="button">
                 Vilain
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/favoris">
-              <button className="HomePage_button" type="button">
-                Favoris
               </button>
             </Link>
           </li>
