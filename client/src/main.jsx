@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage";
 import CharacterHero from "./pages/CharacterHero";
 import CharacterVilain from "./pages/CharacterVilain";
 
-import { heroLoader } from "./services/request";
+import { getBands, getHeros } from "./services/request";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,15 @@ const router = createBrowserRouter([
       {
         path: "/hero",
         element: <CharacterHero />,
-        loader: heroLoader,
+        loader: async ({ request }) => {
+          const url = new URL(request.url);
+          const band = url.searchParams.get("band");
+          const result = {
+            bands: await getBands(),
+            heros: await getHeros(band),
+          };
+          return result;
+        },
       },
       {
         path: "/vilain",

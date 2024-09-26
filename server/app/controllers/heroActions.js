@@ -2,8 +2,16 @@ const tables = require("../../database/tables");
 
 const browse = async (req, res, next) => {
   try {
-    const heros = await tables.hero.readAll();
-    res.json(heros);
+    const { band } = req.query;
+    const heros = await tables.hero.readAll(band);
+    if (heros.length === 0) {
+      res.json({
+        message: "Pas de heros",
+        result: heros,
+      });
+    } else {
+      res.json({ result: heros });
+    }
   } catch (error) {
     next(error);
   }

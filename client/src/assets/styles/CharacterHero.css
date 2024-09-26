@@ -3,8 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-text-stroke: 6px var(--fifty-color);
-  paint-order: stroke fill;
   color: var(--primary-color);
   font-family: var(--primary-font);
 }
@@ -12,6 +10,17 @@
 .CharactereHeroPage > h1 {
   margin: 1rem;
   letter-spacing: 2px;
+  -webkit-text-stroke: 6px var(--fifty-color);
+  paint-order: stroke fill;
+}
+
+.CharacterHero_input {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.CharacterHero_input > select {
+  height: 100%;
 }
 
 .CharacterHero_list {

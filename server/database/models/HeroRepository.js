@@ -5,8 +5,18 @@ class HeroRepositroy extends abstractRepository {
     super({ table: "hero" });
   }
 
-  async readAll() {
-    const [rows] = await this.database.query(`select * from ${this.table}`);
+  async readAll(band) {
+    if (!band) {
+      const [rows] = await this.database.query(
+        `SELECT hero.*, band.id as band_id, band.name as band_name from ${this.table} join band on band.id = hero.band_id`
+      );
+      return rows;
+    }
+
+    const [rows] = await this.database.query(
+      `select hero .*, band.id as band_id, band.name as band_name from ${this.table} join band on band.id = hero.band_id where band.name = ?`,
+      [band]
+    );
     return rows;
   }
 
@@ -20,8 +30,8 @@ class HeroRepositroy extends abstractRepository {
 
   async create(hero) {
     const [result] = await this.database.query(
-      `insert into ${this.table} (name, alias, biography, image_url) values (?, ?, ?, ?)`,
-      [hero.name, hero.alias, hero.biography, hero.image_url]
+      `insert into ${this.table} (name, alias, biography, image) values (?, ?, ?, ?)`,
+      [hero.name, hero.alias, hero.biography, hero.image]
     );
     return result.insertId;
   }
@@ -36,12 +46,11 @@ class HeroRepositroy extends abstractRepository {
 
   async update(hero) {
     const [result] = await this.database.query(
-      `update ${this.table} set name = ?, alias = ?, biography = ?, image_url = ? where id = ?`,
-      [hero.name, hero.alias, hero.biography, hero.image_url, hero.id,]
+      `update ${this.table} set name = ?, alias = ?, biography = ?, image = ? where id = ?`,
+      [hero.name, hero.alias, hero.biography, hero.image, hero.id]
     );
     return result.affectedRows;
   }
 }
 
 module.exports = HeroRepositroy;
-
