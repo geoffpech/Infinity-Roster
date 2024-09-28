@@ -30,8 +30,8 @@ class HeroRepositroy extends abstractRepository {
 
   async create(hero) {
     const [result] = await this.database.query(
-      `insert into ${this.table} (name, alias, biography, image) values (?, ?, ?, ?)`,
-      [hero.name, hero.alias, hero.biography, hero.image]
+      `insert into ${this.table} (name, alias, biography, image, band_id) values (?, ?, ?, ?, ?)`,
+      [hero.name, hero.alias, hero.biography, hero.image, hero.band_id]
     );
     return result.insertId;
   }
