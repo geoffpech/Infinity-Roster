@@ -12,6 +12,7 @@ import AddHero from "./pages/AddHero";
 import EditHero from "./pages/EditHero";
 
 import { getBands, getHeros, heroLoaderDetails } from "./services/request";
+import heroActions from "./services/heroActions";
 
 const router = createBrowserRouter([
   {
@@ -42,11 +43,13 @@ const router = createBrowserRouter([
       {
         path: "/hero/add",
         element: <AddHero />,
+        action: heroActions,
         loader: getBands,
       },
       {
         path: "/hero/edit/:id",
         element: <EditHero />,
+        action: heroActions,
         loader: getBands,
       },
       {

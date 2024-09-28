@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 
 export default function CharacterHeroCard({ hero }) {
   return (
@@ -14,3 +14,12 @@ export default function CharacterHeroCard({ hero }) {
     </div>
   );
 }
+
+CharacterHeroCard.propTypes = {
+  hero: PropTypes.shape({
+    name: PropTypes.string,
+    alias: PropTypes.string,
+    image: PropTypes.string,
+    biography: PropTypes.string,
+  }).isRequired,
+};

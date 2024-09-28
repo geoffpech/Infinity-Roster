@@ -11,7 +11,12 @@ export default function FormHero({ bands }) {
       <label htmlFor="biography"> Biographie du héro :</label>
       <input id="FormHero_biography" name="biography" type="text" required />
       <label htmlFor="image">Photo du héro</label>
-      <input id="image" name="image" type="file" />
+      <input
+        id="image"
+        name="image"
+        type="file"
+        accept=".doc, .docx, .pdf, .jpg, .jpeg, .png"
+      />
       <label htmlFor="band_id"> Groupe du héro :</label>
       <select id="FormHero_band_id" name="band_id" required>
         <option value="">---------</option>
