@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import CharacterHeroCard from "../components/CharacterHeroCard";
 
 export default function CharacterHero() {
@@ -23,9 +23,9 @@ export default function CharacterHero() {
       </div>
       <div className="CharacterHero_list">
         {heros.map((hero) => (
-          <div className="CharacterHero" key={hero.id}>
+          <Link to={`/hero/${hero.id}`} className="CharacterHero" key={hero.id}>
             <CharacterHeroCard hero={hero} />
-          </div>
+          </Link>
         ))}
       </div>
     </div>
