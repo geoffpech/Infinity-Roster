@@ -47,6 +47,7 @@ const router = createBrowserRouter([
       {
         path: "/hero/edit/:id",
         element: <EditHero />,
+        loader: getBands,
       },
       {
         path: "/vilain",
