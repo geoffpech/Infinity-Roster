@@ -8,7 +8,7 @@ export default function HomePage() {
       <div className="Homepage_list">
         <ul>
           <li>
-            <Link to="/hero">
+            <Link to="/hero?band=">
               <button className="HomePage_button" type="button">
                 Hero
               </button>
@@ -26,8 +26,8 @@ export default function HomePage() {
       <div className="HomePage_description">
         <p>
           S'adresse aux passionnés de comics et de super-héros souhaitant avoir
-          un accès rapide et personnalisé aux caractéristiques de leurs
-          personnages favoris.
+          un accès rapide et personnalisé aux informations de leurs personnages
+          favoris.
         </p>
       </div>
       <img src={Stanlee} alt="stan lee fan art haut du corps" />

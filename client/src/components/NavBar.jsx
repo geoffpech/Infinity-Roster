@@ -27,7 +27,7 @@ export default function NavBar() {
             <Link to="/">
               <li>Accueil</li>
             </Link>
-            <Link to="/hero">
+            <Link to="/hero?band=">
               <li>Hero</li>
             </Link>
             <Link to="/vilain">

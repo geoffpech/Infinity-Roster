@@ -8,7 +8,9 @@ import HomePage from "./pages/HomePage";
 import CharacterHero from "./pages/CharacterHero";
 import CharacterVilain from "./pages/CharacterVilain";
 
-import { getBands, getHeros } from "./services/request";
+import { getBands, getHeros, heroLoaderDetails } from "./services/request";
+import CharacterHeroDetails from "./pages/CharacterHeroDetails";
+import AddHero from "./pages/AddHero";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,15 @@ const router = createBrowserRouter([
           };
           return result;
         },
+      },
+      {
+        path: "/hero/:id",
+        element: <CharacterHeroDetails />,
+        loader: heroLoaderDetails,
+      },
+      {
+        path: "/hero",
+        element: <AddHero />,
       },
       {
         path: "/vilain",
