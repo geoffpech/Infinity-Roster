@@ -7,10 +7,11 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import CharacterHero from "./pages/CharacterHero";
 import CharacterVilain from "./pages/CharacterVilain";
-
-import { getBands, getHeros, heroLoaderDetails } from "./services/request";
 import CharacterHeroDetails from "./pages/CharacterHeroDetails";
 import AddHero from "./pages/AddHero";
+import EditHero from "./pages/EditHero";
+
+import { getBands, getHeros, heroLoaderDetails } from "./services/request";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +40,13 @@ const router = createBrowserRouter([
         loader: heroLoaderDetails,
       },
       {
-        path: "/hero",
+        path: "/hero/add",
         element: <AddHero />,
+        loader: getBands,
+      },
+      {
+        path: "/hero/edit/:id",
+        element: <EditHero />,
       },
       {
         path: "/vilain",
