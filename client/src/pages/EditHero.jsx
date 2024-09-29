@@ -6,7 +6,11 @@ export default function EditHero() {
 
   return (
     <div className="Edit_hero">
-      <Form className="Edit_hero_form" metho="put">
+      <Form
+        className="Edit_hero_form"
+        metho="put"
+        encType="multipart/form-data"
+      >
         <FormHero bands={bands} />
         <button type="submit" className="Edit_hero_remake">
           Mettre à jour le héro

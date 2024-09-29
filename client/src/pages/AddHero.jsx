@@ -6,7 +6,11 @@ export default function AddHero() {
 
   return (
     <div className="Add_hero">
-      <Form className="Add_hero_form" method="post">
+      <Form
+        className="Add_hero_form"
+        method="post"
+        encType="multipart/form-data"
+      >
         <FormHero bands={bands} />
         <h2>Votre héro est prêt ?</h2>
         <button type="submit">Ajouter</button>
