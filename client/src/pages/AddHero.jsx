@@ -12,8 +12,12 @@ export default function AddHero() {
         encType="multipart/form-data"
       >
         <FormHero bands={bands} />
-        <h2>Votre héro est prêt ?</h2>
-        <button type="submit">Ajouter</button>
+        <div className="AddHero_title_submit">
+          <h2>Votre héro est prêt ?</h2>
+          <button className="AddHero_button" type="submit">
+            Ajouter
+          </button>
+        </div>
       </Form>
     </div>
   );

@@ -8,6 +8,8 @@ import "./assets/styles/Homepage.css";
 import "./assets/styles/Footer.css";
 import "./assets/styles/CharacterHero.css";
 import "./assets/styles/CharacterHeroCard.css";
+import "./assets/styles/AddHero.css";
+import "./assets/styles/EditHero.css";
 
 function App() {
   return (
