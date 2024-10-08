@@ -11,6 +11,7 @@ import "./assets/styles/CharacterHeroCard.css";
 import "./assets/styles/AddHero.css";
 import "./assets/styles/EditHero.css";
 import "./assets/styles/FormHero.css";
+import "./assets/styles/CharacterHeroDetails.css";
 
 function App() {
   return (

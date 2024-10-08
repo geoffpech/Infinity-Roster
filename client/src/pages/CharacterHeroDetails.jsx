@@ -5,9 +5,9 @@ export default function CharacterHeroDetails() {
   const hero = useLoaderData();
 
   return (
-    <>
-      <h1> Alias du hero</h1>
+    <div className="CharacterHeroDetails">
+      <h1> {hero.alias}</h1>
       <CharacterHeroCard hero={hero} />
-    </>
+    </div>
   );
 }

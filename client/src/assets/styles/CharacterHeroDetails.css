@@ -1,0 +1,12 @@
+.CharacterHeroDetails {
+  background: radial-gradient(var(--sixty-color), var(--seventy-color));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CharacterHeroDetails > h1 {
+  -webkit-text-stroke: 6px var(--fifty-color);
+  paint-order: stroke fill;
+  color: var(--primary-color);
+}
