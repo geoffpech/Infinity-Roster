@@ -1,0 +1,13 @@
+.Form_Hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+.Form_Hero > h2,
+label {
+  -webkit-text-stroke: 6px var(--fifty-color);
+  paint-order: stroke fill;
+}

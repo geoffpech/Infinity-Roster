@@ -10,6 +10,7 @@ import "./assets/styles/CharacterHero.css";
 import "./assets/styles/CharacterHeroCard.css";
 import "./assets/styles/AddHero.css";
 import "./assets/styles/EditHero.css";
+import "./assets/styles/FormHero.css";
 
 function App() {
   return (

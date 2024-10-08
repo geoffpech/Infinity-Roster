@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function FormHero({ bands }) {
   return (
-    <div className="Edit_Hero">
+    <div className="Form_Hero">
       <h2>Informations du héro</h2>
       <label htmlFor="name"> Nom du héro :</label>
       <input id="FormHero_name" name="name" type="text" required />

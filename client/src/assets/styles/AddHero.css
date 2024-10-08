@@ -24,17 +24,3 @@
   border-radius: 8px;
   border: 2px solid var(--fifty-color);
 }
-
-.Edit_Hero {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  color: var(--primary-color);
-}
-
-.Edit_Hero > h2,
-label {
-  -webkit-text-stroke: 6px var(--fifty-color);
-  paint-order: stroke fill;
-}
